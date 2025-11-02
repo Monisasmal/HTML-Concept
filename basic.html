@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FAQ</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f7f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem 2rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Header */
+        h1 {
+            text-align: center;
+            color: #0077cc;
+            margin-bottom: 1rem;
+        }
+
+        /* Questions */
+        h2 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            color: #005fa3;
+        }
+
+        /* Code Blocks */
+        pre {
+            background: #f0f0f0;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            color: #d6336c;
+        }
+
+        /* Responsive Table (if needed later) */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        th {
+            background: #0077cc;
+            color: #fff;
+        }
+
+        /* Paragraphs */
+        p {
+            margin: 0.5rem 0;
+        }
+
+        /* Responsive */
+        @media(max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML FAQ</h1>
+
+        <h2>Q1 — What is HTML?</h2>
+        <p>HTML (HyperText Markup Language) is the standard language for creating web pages. It uses elements (tags) to describe the structure and meaning of content.</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Hello&lt;/h1&gt;
+&lt;p&gt;Paragraph text.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+        <h2>Q2 — Difference between HTML, XHTML, and HTML5?</h2>
+        <p><strong>HTML:</strong> Original, forgiving syntax.</p>
+        <p><strong>XHTML:</strong> XML-based, strict rules (must be well-formed).</p>
+        <p><strong>HTML5:</strong> Modern spec with semantic tags, multimedia APIs, canvas, storage, and more.</p>
+
+        <h2>Q3 — What are tags and attributes?</h2>
+        <p>Tags are element names wrapped in <code>&lt;&gt;</code> (e.g., <code>&lt;p&gt;</code>). Attributes provide extra information (e.g., class, id, src).</p>
+        <pre><code>&lt;img src="cat.jpg" alt="Cute cat"&gt;</code></pre>
+
+        <h2>Q4 — Block-level vs Inline elements?</h2>
+        <p>Block-level elements (e.g., <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>) take full width and start on a new line. Inline elements (e.g., <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>) flow within a line.</p>
+
+        <h2>Q5 — Difference between &lt;div&gt; and &lt;span&gt;?</h2>
+        <p><code>&lt;div&gt;</code> is block-level (layout container). <code>&lt;span&gt;</code> is inline (wrap small bits of content).</p>
+
+        <h2>Q6 — Semantic HTML: what and why?</h2>
+        <p>Semantic elements (like <code>&lt;article&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;header&gt;</code>) express meaning — improving accessibility, SEO, and maintainability.</p>
+
+        <h2>Q7 — &lt;strong&gt; vs &lt;b&gt;?</h2>
+        <p><code>&lt;strong&gt;</code> indicates importance (semantic). <code>&lt;b&gt;</code> is presentational (bold) without semantic emphasis.</p>
+
+        <h2>Q8 — &lt;em&gt; vs &lt;i&gt;?</h2>
+        <p><code>&lt;em&gt;</code> indicates emphasis (semantic). <code>&lt;i&gt;</code> is typically for italics/presentation or alternate voice.</p>
+
+        <h2>Q9 — Void/self-closing elements?</h2>
+        <p>Elements that don't have content or closing tags: <code>&lt;img&gt;</code>, <code>&lt;br&gt;</code>, <code>&lt;hr&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;meta&gt;</code>, <code>&lt;link&gt;</code>.</p>
+
+        <h2>Q10 — Difference between HTML and CSS?</h2>
+        <p>HTML defines structure and content; CSS defines presentation (layout, colors, fonts).</p>
+
+    </div>
+</body>
+</html>
