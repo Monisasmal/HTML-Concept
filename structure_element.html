@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Structure and Element</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f7f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem 2rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #0077cc;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            color: #005fa3;
+        }
+        pre {
+            background: #f0f0f0;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            color: #d6336c;
+        }
+        p { margin: 0.5rem 0; }
+        @media(max-width: 600px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.5rem; }
+            h2 { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HTML Structure and Element</h1>
+
+        <h2>Q11 — &lt;head&gt; vs &lt;body&gt;?</h2>
+        <p><strong>&lt;head&gt;</strong> contains metadata like title, meta tags, scripts, CSS links.</p>
+        <p><strong>&lt;body&gt;</strong> contains all visible content displayed in the browser.</p>
+
+        <h2>Q12 — Purpose of &lt;title&gt;?</h2>
+        <p>Defines page title — visible in browser tab & search engine results. Important for SEO.</p>
+
+        <h2>Q13 — &lt;link&gt; vs &lt;a&gt;?</h2>
+        <p><strong>&lt;link&gt;</strong> loads external resources (CSS, icons, fonts).</p>
+        <p><strong>&lt;a&gt;</strong> creates clickable links for navigation.</p>
+        <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;
+&lt;a href="about.html"&gt;About Us&lt;/a&gt;</code></pre>
+
+        <h2>Q14 — &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;nav&gt;?</h2>
+        <p><strong>&lt;nav&gt;</strong> — navigation links</p>
+        <p><strong>&lt;article&gt;</strong> — self-contained content (blog, post)</p>
+        <p><strong>&lt;section&gt;</strong> — thematic content grouping</p>
+        <p><strong>&lt;aside&gt;</strong> — side content like ads, sidebars</p>
+
+        <h2>Q15 — &lt;ol&gt;, &lt;ul&gt;, &lt;dl&gt;?</h2>
+        <p><strong>&lt;ol&gt;</strong> — ordered (numbered) list</p>
+        <p><strong>&lt;ul&gt;</strong> — unordered (bullets) list</p>
+        <p><strong>&lt;dl&gt;</strong> — definition list with terms & descriptions</p>
+        <pre><code>&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+
+        <h2>Q16 — &lt;figure&gt; vs &lt;img&gt;?</h2>
+        <p><strong>&lt;img&gt;</strong> displays an image.</p>
+        <p><strong>&lt;figure&gt;</strong> wraps an image with caption.</p>
+        <pre><code>&lt;figure&gt;
+  &lt;img src="photo.jpg" alt="Example"&gt;
+  &lt;figcaption&gt;Sample Image&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+
+        <h2>Q17 — &lt;iframe&gt; vs &lt;embed&gt;?</h2>
+        <p><strong>&lt;iframe&gt;</strong> embeds another HTML page.</p>
+        <p><strong>&lt;embed&gt;</strong> embeds files like PDFs, media.</p>
+
+        <h2>Q18 — &lt;table&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;?</h2>
+        <p>Used for structured tabular data with header, body & footer sections.</p>
+
+        <h2>Q19 — &lt;form&gt; vs &lt;input&gt;?</h2>
+        <p><strong>&lt;form&gt;</strong> — container for user input fields/sending data.</p>
+        <p><strong>&lt;input&gt;</strong> — field to capture user data.</p>
+
+        <h2>Q20 — &lt;label&gt; vs &lt;legend&gt;?</h2>
+        <p><strong>&lt;label&gt;</strong> — describes an input field & improves accessibility.</p>
+        <p><strong>&lt;legend&gt;</strong> — title for a group of inputs inside &lt;fieldset&gt;.</p>
+    </div>
+</body>
+</html>
