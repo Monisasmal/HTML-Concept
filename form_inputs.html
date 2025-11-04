@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form & Input</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f7f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem 2rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #0077cc;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            color: #005fa3;
+        }
+        pre {
+            background: #f0f0f0;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            color: #d6336c;
+        }
+        p { margin: 0.5rem 0; }
+
+        @media(max-width: 600px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.5rem; }
+            h2 { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1>HTML Form & Input</h1>
+
+    <h2>Q21 — Common &lt;input&gt; types (HTML5)?</h2>
+    <p>text, password, email, url, tel, number, range, date, datetime-local, time, color, checkbox, radio, file, search, hidden, submit, reset, button.</p>
+
+    <h2>Q22 — id vs name in forms?</h2>
+    <p><strong>id:</strong> connects &lt;label&gt; and used in CSS/JS.</p>
+    <p><strong>name:</strong> key used to send data to server during form submit.</p>
+
+    <h2>Q24 — required, disabled, readonly?</h2>
+    <p><strong>required:</strong> must be filled.</p>
+    <p><strong>disabled:</strong> cannot edit; not submitted.</p>
+    <p><strong>readonly:</strong> cannot edit; submitted.</p>
+
+    <h2>Q25 — placeholder vs value?</h2>
+    <p><strong>placeholder:</strong> grey hint text.</p>
+    <p><strong>value:</strong> actual field value.</p>
+
+    <h2>Q26 — autocomplete usage?</h2>
+    <p>Allows browser to suggest saved user values (username, email, etc.).</p>
+    <pre><code>&lt;input type="email" autocomplete="email"&gt;</code></pre>
+
+    <h2>Q27 — &lt;button&gt; vs &lt;input type="submit"&gt;?</h2>
+    <p><strong>&lt;button&gt;</strong> can contain HTML (icons, text) & supports types: submit/reset/button.</p>
+    <p><strong>&lt;input type="submit"&gt;</strong> only a submit button.</p>
+    <pre><code>&lt;button type="submit"&gt;Submit ✅&lt;/button&gt;
+&lt;input type="submit" value="Submit"&gt;</code></pre>
+
+    <h2>Q28 — &lt;datalist&gt; vs &lt;select&gt;?</h2>
+    <p><strong>&lt;select&gt;</strong> dropdown list.</p>
+    <p><strong>&lt;datalist&gt;</strong> suggestions for text input (user can enter new values).</p>
+    <pre><code>&lt;input list="languages"&gt;
+&lt;datalist id="languages"&gt;
+  &lt;option value="HTML"&gt;
+  &lt;option value="CSS"&gt;
+&lt;/datalist&gt;</code></pre>
+
+    <h2>Q29 — novalidate vs required?</h2>
+    <p><strong>novalidate</strong> disables form validation entirely.</p>
+    <p><strong>required</strong> enforces validation on specific input.</p>
+    <pre><code>&lt;form novalidate&gt; ... &lt;/form&gt;</code></pre>
+
+    <h2>Q30 — fieldset vs legend?</h2>
+    <p><strong>&lt;fieldset&gt;</strong> groups form controls.</p>
+    <p><strong>&lt;legend&gt;</strong> title for that group.</p>
+    <pre><code>&lt;fieldset&gt;
+  &lt;legend&gt;User Info&lt;/legend&gt;
+  &lt;input type="text" placeholder="Name"&gt;
+&lt;/fieldset&gt;</code></pre>
+
+</div>
+</body>
+</html>
