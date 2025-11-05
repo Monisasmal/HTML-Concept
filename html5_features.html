@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Features</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f7f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem 2rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #0077cc;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            color: #005fa3;
+        }
+        pre {
+            background: #f0f0f0;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            color: #d6336c;
+        }
+        p { margin: 0.5rem 0; }
+
+        @media(max-width: 600px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.5rem; }
+            h2 { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1>HTML5 Features</h1>
+
+    <h2>Q31 — New HTML5 features?</h2>
+    <p>Semantic tags, audio/video, canvas, SVG, geolocation, web storage, Web Workers, offline APIs, new input types, picture/srcset for responsive images.</p>
+
+    <h2>Q32 — &lt;audio&gt; and &lt;video&gt; usage?</h2>
+    <p>Native media elements with controls, autoplay, loop, muted, multiple sources.</p>
+    <pre><code>&lt;video controls&gt;
+  &lt;source src="movie.mp4" type="video/mp4"&gt;
+  Your browser does not support video.
+&lt;/video&gt;</code></pre>
+
+    <h2>Q33 — &lt;canvas&gt; vs &lt;svg&gt;?</h2>
+    <p><strong>Canvas:</strong> pixel-based, procedural drawing (games, animations).</p>
+    <p><strong>SVG:</strong> vector-based, DOM elements (icons, charts, diagrams).</p>
+
+    <h2>Q35 — Local Storage vs Session Storage?</h2>
+    <p>Both store key-value data in browser.</p>
+    <p><strong>localStorage:</strong> persists across tabs and restarts.</p>
+    <p><strong>sessionStorage:</strong> cleared when tab closes.</p>
+
+    <h2>Q36 — Cookies vs localStorage vs sessionStorage?</h2>
+    <p><strong>Cookies:</strong> tiny, sent to server, can expire, secure flags.</p>
+    <p><strong>localStorage:</strong> large, persistent, client-side only.</p>
+    <p><strong>sessionStorage:</strong> temporary per tab.</p>
+
+    <h2>Q37 — data-* vs id/class?</h2>
+    <p><strong>data-*:</strong> custom data for JS.</p>
+    <p><strong>id:</strong> unique identifier.</p>
+    <p><strong>class:</strong> reusable group for styling/JS.</p>
+
+    <h2>Q38 — Web Workers?</h2>
+    <p>Run JS in the background for CPU-heavy tasks without blocking UI.</p>
+
+    <h2>Q39 — Application Cache vs Service Workers?</h2>
+    <p><strong>AppCache:</strong> Deprecated.</p>
+    <p><strong>Service Workers:</strong> modern offline cache, request control, background sync.</p>
+
+    <h2>Q40 — Geolocation vs Device Orientation API?</h2>
+    <p><strong>Geolocation:</strong> latitude/longitude position.</p>
+    <p><strong>Device Orientation:</strong> access accelerometer/gyro for device tilt & rotation.</p>
+
+</div>
+</body>
+</html>
