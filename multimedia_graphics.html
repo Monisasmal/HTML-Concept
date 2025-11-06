@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>HTML Media & Responsive </title>
+
+<!-- ✅ SEO -->
+<meta name="description" content="HTML interview questions on iframe, embed, object, srcset, picture vs img with examples. Perfect web developer notes." />
+<meta name="keywords" content="HTML iframe vs embed vs object, HTML srcset sizes, picture vs img, responsive images HTML interview" />
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  padding: 20px;
+  line-height: 1.6;
+}
+.wrapper {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+ul {
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #fff;
+  border-left: 4px solid #4a90e2;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+code {
+  background: #eee;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+pre {
+  background: #272822;
+  color: #fff;
+  padding: 12px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+<h1>HTML Media & Responsive Images Q&A</h1>
+
+<ul>
+
+<li>
+<strong>Q41 — &lt;embed&gt;, &lt;object&gt;, &lt;iframe&gt; differences?</strong><br><br>
+&lt;iframe&gt; → embeds another HTML page (like YouTube, Google Maps). <br>
+&lt;object&gt; → can embed multimedia & supports fallback content. <br>
+&lt;embed&gt; → embeds external content (simpler, plugin-based like PDF). <br><br>
+
+<b>Example:</b>  
+<pre>
+<!-- iframe example -->
+<iframe src="page.html" width="300" height="200"></iframe>
+
+<!-- object example -->
+<object data="file.pdf" type="application/pdf" width="300" height="200">
+  PDF not supported. Download instead.
+</object>
+
+<!-- embed example -->
+<embed src="video.mp4" width="300" height="200">
+</embed>
+</pre>
+</li>
+
+<li>
+<strong>Q42 — Responsive images: <code>srcset</code> and <code>sizes</code>?</strong><br><br>
+<code>srcset</code> → provides images in different resolutions/sizes <br>
+<code>sizes</code> → tells browser how much space the image will take <br>
+Browser chooses best file to save bandwidth & improve performance.<br><br>
+
+<b>Example:</b>
+<pre>
+<img src="small.jpg"
+  srcset="small.jpg 480w, medium.jpg 800w, large.jpg 1200w"
+  sizes="(max-width: 600px) 480px, 800px"
+  alt="Example image">
+</pre>
+</li>
+
+<li>
+<strong>Q43 — &lt;picture&gt; vs &lt;img&gt;?</strong><br><br>
+<b>&lt;picture&gt;</b> → art direction — different images for different screen sizes/devices. <br>
+<b>&lt;img&gt;</b> → single source with optional srcset for resolution selection.<br><br>
+
+<b>Example:</b>
+<pre>
+<picture>
+  <source media="(max-width: 600px)" srcset="mobile.png">
+  <source media="(max-width: 1200px)" srcset="tablet.png">
+  <img src="desktop.png" alt="Responsive example image">
+</picture>
+</pre>
+</li>
+
+</ul>
+
+</div>
+
+</body>
+</html>
