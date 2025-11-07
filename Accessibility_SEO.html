@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Accessibility & SEO Q&A</title>
+
+<!-- ✅ SEO -->
+<meta name="description" content="HTML interview questions on ARIA, SEO tags, alt vs title attributes, accessibility and canonical links. Best developer notes.">
+<meta name="keywords" content="HTML ARIA, alt vs title, canonical link HTML, robots meta tag, semantic HTML accessibility, SEO interview questions">
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f6f8fa;
+  padding: 20px;
+  line-height: 1.6;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+h1 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 20px;
+}
+ul {
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #fff;
+  border-left: 4px solid #2e86de;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+strong {
+  color: #1b4f72;
+}
+code {
+  background: #eee;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+pre {
+  background: #272822;
+  color: #fff;
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin-top: 8px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<h1>HTML Accessibility & SEO Q&A</h1>
+
+<ul>
+
+<li>
+<strong>Q46 — What is ARIA?</strong><br>
+ARIA (Accessible Rich Internet Applications) helps make dynamic content accessible.<br>
+Attributes like <code>role</code>, <code>aria-label</code> assist screen readers.<br><br>
+Example:<br>
+<pre>
+<button aria-label="Open navigation menu"></button>
+</pre>
+</li>
+
+<li>
+<strong>Q47 — alt vs title for images?</strong><br>
+<b>alt:</b> Required. Used by screen readers & when image fails.<br>
+<b>title:</b> Optional. Shows tooltip. Not a replacement for <code>alt</code>.
+</li>
+
+<li>
+<strong>Q48 — id vs class?</strong><br>
+<b>id:</b> unique (one per page).<br>
+<b>class:</b> reusable for styling & JS selection.
+</li>
+
+<li>
+<strong>Q49 — &lt;header&gt;, &lt;footer&gt;, &lt;main&gt; uses?</strong><br>
+Semantic layout landmarks:<br>
+- <code>&lt;header&gt;</code> → top info/nav  
+- <code>&lt;footer&gt;</code> → bottom info  
+- <code>&lt;main&gt;</code> → main content  
+Helps SEO & screen readers.
+</li>
+
+<li>
+<strong>Q50 — What are meta tags in HTML?</strong><br>
+Provide metadata inside <code>&lt;head&gt;</code>:<br><br>
+<pre>
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="description" content="Learn HTML interview questions"&gt;
+&lt;meta name="keywords" content="HTML, interview, web development"&gt;
+&lt;meta name="author" content="Manaswini"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+</pre>
+</li>
+
+<li>
+<strong>Q51 — UTF-8 vs other encodings?</strong><br>
+<b>UTF-8:</b> Supports almost all languages (universal).<br>
+<b>ISO-8859-1:</b> Western European only.<br>
+<b>Shift-JIS:</b> Japanese characters.
+</li>
+
+<li>
+<strong>Q52 — Canonical link vs normal link?</strong><br>
+<b>Normal link:</b> Navigation.<br>
+<b>Canonical link:</b> SEO — preferred URL to avoid duplicate content.<br><br>
+<pre>
+&lt;link rel="canonical" href="https://example.com/main-page"&gt;
+</pre>
+</li>
+
+<li>
+<strong>Q53 — How HTML structure affects SEO?</strong><br>
+- Semantic tags improve crawlability<br>
+- Correct heading order improves content understanding<br>
+- Alt text boosts accessibility & SEO
+</li>
+
+<li>
+<strong>Q54 — robots.txt vs meta robots?</strong><br>
+<b>robots.txt:</b> Tells search engines which pages to crawl/ignore (site-wide).<br>
+<b>meta robots:</b> Page-level rules: <code>index, noindex, nofollow</code><br><br>
+Example:<br>
+<pre>
+&lt;meta name="robots" content="noindex, nofollow"&gt;
+</pre>
+</li>
+
+<li>
+<strong>Q55 — How to make a website accessible?</strong><br>
+✅ Use semantic tags <code>&lt;main&gt;, &lt;nav&gt;, &lt;section&gt;</code><br>
+✅ Use ARIA where needed<br>
+✅ Provide <code>alt</code> text<br>
+✅ Correct heading order<br>
+✅ Label forms properly
+</li>
+
+</ul>
+</div>
+
+</body>
+</html>
