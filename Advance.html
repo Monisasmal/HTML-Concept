@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Features FAQ (Part-6)</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f7f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem 2rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #0077cc;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            color: #005fa3;
+        }
+        pre {
+            background: #f0f0f0;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            color: #d6336c;
+        }
+        p { margin: 0.5rem 0; }
+
+        @media(max-width: 600px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.5rem; }
+            h2 { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1>HTML5 FAQ — Part 6</h1>
+
+    <h2>Q56 — What are custom data attributes (data-*)?</h2>
+    <p>Used to store extra custom data inside HTML elements, accessible via JS.</p>
+    <pre><code>&lt;button data-user-id="101"&gt;Profile&lt;/button&gt;
+&lt;script&gt;
+console.log(document.querySelector("button").dataset.userId); // 101
+&lt;/script&gt;</code></pre>
+
+    <h2>Q57 — Difference between inline, internal, and external CSS?</h2>
+    <p><strong>Inline:</strong> inside element → <code>&lt;p style="color:red"&gt;</code></p>
+    <p><strong>Internal:</strong> inside &lt;style&gt; in head</p>
+    <p><strong>External:</strong> separate .css file (✅ best practice)</p>
+
+    <h2>Q58 — async vs defer vs normal script loading?</h2>
+    <p><strong>Normal:</strong> blocks HTML until loaded</p>
+    <p><strong>async:</strong> loads parallel, executes immediately</p>
+    <p><strong>defer:</strong> loads parallel, executes after HTML parsed</p>
+    <pre><code>&lt;script src="app.js" async&gt;&lt;/script&gt;
+&lt;script src="app.js" defer&gt;&lt;/script&gt;</code></pre>
+
+    <h2>Q59 — Shadow DOM vs Normal DOM?</h2>
+    <p><strong>Normal DOM:</strong> global, styles affect whole page</p>
+    <p><strong>Shadow DOM:</strong> encapsulated, style isolated (Web Components)</p>
+
+    <h2>Q60 — iframe vs AJAX?</h2>
+    <p><strong>iframe:</strong> loads entire external webpage</p>
+    <p><strong>AJAX:</strong> loads only data without page reload</p>
+
+    <h2>Q61 — HTML entities?</h2>
+    <p>Used to display reserved characters.</p>
+    <pre><code>&amp;lt; = &lt;
+&amp;gt; = &gt;
+&amp;amp; = &amp;
+&amp;quot; = "
+&amp;apos; = '
+&amp;copy; = ©</code></pre>
+
+    <h2>Q62 — Progressive rendering vs Lazy loading?</h2>
+    <p><strong>Progressive:</strong> shows content as it loads</p>
+    <p><strong>Lazy loading:</strong> loads images only when needed</p>
+
+    <h2>Q63 — What are polyfills?</h2>
+    <p>JS code that adds modern browser features to older browsers.</p>
+    <p>Example: fetch() polyfill for old browsers.</p>
+
+    <h2>Q64 — What is CORS?</h2>
+    <p>Security mechanism to control cross-origin requests via server headers.</p>
+
+    <h2>Q65 — How to optimize HTML for performance?</h2>
+    <p>Minify CSS/JS, lazy load images, use async/defer, reduce DOM, caching.</p>
+
+    <h2>Q66 — Lazy loading attribute?</h2>
+    <p>Loads images only when user scrolls near them.</p>
+    <pre><code>&lt;img src="photo.jpg" loading="lazy"&gt;</code></pre>
+
+    <h2>Q67 — Inline SVG vs External SVG?</h2>
+    <p><strong>Inline SVG:</strong> inside HTML, styleable with CSS/JS</p>
+    <p><strong>External SVG:</strong> used via &lt;img&gt;, limited styling</p>
+
+</div>
+</body>
+</html>
