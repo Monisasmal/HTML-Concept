@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Miscellaneous</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f7f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem 2rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #0077cc;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            color: #005fa3;
+        }
+        pre {
+            background: #f0f0f0;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            color: #d6336c;
+        }
+        p { margin: 0.5rem 0; }
+
+        @media(max-width: 600px) {
+            .container { padding: 1rem; }
+            h1 { font-size: 1.5rem; }
+            h2 { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>HTML5 FAQ — Part 7</h1>
+
+    <h2>Q68 — Difference between URL, URI, and URN?</h2>
+    <p><strong>URL:</strong> Address of resource (e.g., https://example.com/page)</p>
+    <p><strong>URI:</strong> Identifier of resource (URL or URN)</p>
+    <p><strong>URN:</strong> Unique name without location (e.g., urn:isbn:0451450523)</p>
+
+    <h2>Q69 — What is favicon?</h2>
+    <p>Small icon displayed in browser tab/address bar.</p>
+    <pre><code>&lt;link rel="icon" type="image/png" href="favicon.png"&gt;</code></pre>
+
+    <h2>Q70 — Absolute vs Relative vs Root-relative URLs?</h2>
+    <p><strong>Absolute:</strong> Full path (https://example.com/page)</p>
+    <p><strong>Relative:</strong> Based on current file (about.html)</p>
+    <p><strong>Root-relative:</strong> From site root (/images/logo.png)</p>
+
+    <h2>Q71 — What are iframes? Pros & Cons?</h2>
+    <p><strong>Pros:</strong> Embed external content (maps, ads)</p>
+    <p><strong>Cons:</strong> Security issues, SEO problems, slow</p>
+
+    <h2>Q72 — HTMLCollection vs NodeList?</h2>
+    <p><strong>HTMLCollection:</strong> Live list (e.g., getElementsByTagName)</p>
+    <p><strong>NodeList:</strong> Static list, supports forEach (querySelectorAll)</p>
+
+    <h2>Q73 — PWA vs Normal Website?</h2>
+    <p><strong>PWA:</strong> Offline support, installable, push notifications</p>
+    <p><strong>Normal Site:</strong> Needs internet, no app-like features</p>
+
+    <h2>Q74 — Relationship between HTML, CSS, and JS?</h2>
+    <p><strong>HTML:</strong> Structure</p>
+    <p><strong>CSS:</strong> Style & layout</p>
+    <p><strong>JS:</strong> Interactivity & dynamic behavior</p>
+
+    <h2>Q75 — HTTP vs HTTPS?</h2>
+    <p><strong>HTTP:</strong> Unsecured communication</p>
+    <p><strong>HTTPS:</strong> Secure, encrypted (SSL/TLS), required for modern apps</p>
+
+</div>
+
+</body>
+</html>
