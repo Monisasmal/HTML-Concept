@@ -1,3 +1,12 @@
+# 🌐 HTML5 Interview Questions & Answers — Complete Guide
+
+A beautifully designed and comprehensive collection of **HTML5 Interview Questions & Answers** — from basic to advanced — organized in multiple parts with responsive design and SEO optimization.  
+Ideal for **frontend developers**, **students**, and **interview preparation**.
+
+
+
+
+
 **🙋‍♀️ Author**
 
 ## Manaswini Sasmal
